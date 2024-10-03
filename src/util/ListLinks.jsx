@@ -11,7 +11,7 @@ function ListLinks(list_names, list_links) {
                     <a href="documentation/robots">Robots</a>
                 </li>
                 <li>
-                    <a href="documentation/lable-makers">Label Makers</a>
+                    <a href="documentation/label-makers">Label Makers</a>
                 </li>
                 <li>
                     <a href="documentation/3d-printer">3D Printer</a>

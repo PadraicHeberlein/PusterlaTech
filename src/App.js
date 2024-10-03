@@ -1,20 +1,20 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Docs from './view/docs';
-import PDFViewer  from './util/pdf-viewer';
+import Navbar from './components/Navbar';
+import Commons from './views/Commons';
+import PDFViewer  from './util/PDFViewer';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <main className='main-content'>
-        <Routes>
-          <Route path="/documentation" element={<Docs />} />
-          <Route path="/documentation/robots" element={<PDFViewer />} />
-        </Routes>
-      </main>
+        <Navbar />
+        <main className='main-content'>
+            <Routes>
+                <Route path="/commons" element={<Commons />} />
+                <Route path="/commons/documentation" element={<PDFViewer />} />
+            </Routes>
+        </main>
     </BrowserRouter>
   );
 };

@@ -18,7 +18,7 @@ const Navbar = () => {
                         <a href="/production-lines">Production Lines</a>
                     </li>
                     <li>
-                        <a href="/news">Commons</a>
+                        <a href="/commons">Commons</a>
                     </li>
                 </ul>
             </div>
