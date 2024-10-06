@@ -10,7 +10,8 @@ const App = () => {
         <Navbar />
         <main className='main-content'>
             <Routes>
-                <Route path="/commons" element={<Commons.main />} />               
+                <Route path="/commons" element={<Commons.main />} />
+                <Route path="/commons/documentation" element={<Commons.docs />} />  
             </Routes>
         </main>
     </BrowserRouter>
