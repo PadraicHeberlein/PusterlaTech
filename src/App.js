@@ -3,7 +3,6 @@ import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Commons from './views/Commons';
-import PDFViewer  from './util/PDFViewer';
 
 const App = () => {
   return (
@@ -11,8 +10,7 @@ const App = () => {
         <Navbar />
         <main className='main-content'>
             <Routes>
-                <Route path="/commons" element={<Commons />} />
-                <Route path="/commons/documentation" element={<PDFViewer />} />
+                <Route path="/commons" element={<Commons.main />} />               
             </Routes>
         </main>
     </BrowserRouter>

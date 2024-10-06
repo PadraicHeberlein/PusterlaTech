@@ -1,0 +1,12 @@
+
+
+.links {
+    list-style: georgian inside url('../../public/media/rocket-svgrepo-com.svg');
+    background-color: #5e6f7e;
+    padding: 10px 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    min-height: 70px;
+}
