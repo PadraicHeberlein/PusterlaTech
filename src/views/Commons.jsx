@@ -5,15 +5,16 @@ const Commons = {
     main: function() {
         return (
             <div className="main-view" >
+                <h1 className="title">COMMONS</h1>
                 <ul className="links">
-                    <li>
-                        <a href="/pass-down">Pass Down</a>
+                    <li className="link">
+                        <a href="/commons/documentation">Documentation</a>
                     </li>
-                    <li>
-                        <a href="/production-lines">Production Lines</a>
+                    <li className="link">
+                        <a href="/commons/message-boards">Message Boards</a>
                     </li>
-                    <li>
-                        <a href="/commons">Commons</a>
+                    <li className="link">
+                        <a href="/commons/external-resources">External Resources</a>
                     </li>
                 </ul>
             </div>

@@ -1,12 +1,26 @@
-
+.main-view {
+    padding: 10px;
+    margin: 10px;
+}
 
 .links {
-    list-style: georgian inside url('../../public/media/rocket-svgrepo-com.svg');
+    list-style: url('../../public/media/rocket-svgrepo-com.svg') inside;
     background-color: #5e6f7e;
     padding: 10px 20px;
     display: block;
-    justify-content: space-between;
     align-items: stretch;
-    gap: 40px;
-    min-height: 70px;
+}
+
+.link {
+    background-color: #638fb4;
+    padding: 10px 20px;
+    margin: 10px;
+    display: block;
+    align-items: flex;
+}
+
+.title {
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-flexbox;
 }
