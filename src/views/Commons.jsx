@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import "../styles/Commons.css";
 import SVGListIcons from "../util/SVG-list-icons.jsx";
 
-import svg_prod from "../svg/prod.svg";
-import svg_mech from "../svg/mech.svg";
-import svg_whouse from "../svg/whouse.svg";
-
 const Commons = {
     main: function() {
         return (
@@ -49,15 +45,18 @@ const Commons = {
                 </div>  
                 <ul className="links">
                     <li className="link">
-                        <img src={svg_prod} alt="" />
-                        <a href="/commons/documentation/production" className="text">Production</a>
+                        {SVGListIcons.prod}
+                        <a 
+                            href="/commons/documentation/production" 
+                            className="text"
+                        >Production</a>
                     </li>
                     <li className="link">
-                        <img src={svg_mech} alt="" />
+                        {SVGListIcons.mech}
                         <a href="/commons/documentation/maintenance" className="text">Maintenance</a>
                     </li>
                     <li className="link">
-                        <img src={svg_whouse} alt="" />
+                        {SVGListIcons.warehouse}
                         <a href="/commons/warehouse" className="text">Warehouse</a>
                     </li>
                 </ul>

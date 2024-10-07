@@ -1,11 +1,11 @@
-
-import svg_commons from "../svg/commons.svg";
-import svg_docs from "../svg/docs.svg";
-import svg_msgs from "../svg/msgs.svg";
-import svg_extra from "../svg/extra.svg";
-import svg_prod from "../svg/prod.svg";
-import svg_mech from "../svg/mech.svg";
-import svg_whouse from "../svg/whouse.svg";
+import React from 'react';
+import svg_commons from "../svg-files/commons.svg";
+import svg_docs from "../svg-files/docs.svg";
+import svg_msgs from "../svg-files/msgs.svg";
+import svg_extra from "../svg-files/extra.svg";
+import svg_prod from "../svg-files/prod.svg";
+import svg_mech from "../svg-files/mech.svg";
+import svg_warehouse from "../svg-files/warehouse.svg";
 
 const img = (type) => {
     return (
@@ -14,11 +14,13 @@ const img = (type) => {
 };
 
 const svg_list_icons = {
-    commons: function() { return img(svg_commons); },
-    docs: function () { return img(svg_docs); },
-    msgs: function () { return img(svg_msgs); },
-    extra: function () { return img(svg_extra); },
-    prod: function () { return img(svg_prod); },
+    commons: () => { return img(svg_commons); },
+    docs: () => { return img(svg_docs); },
+    msgs: () => { return img(svg_msgs); },
+    extra: () => { return img(svg_extra); },
+    prod: () => { return img(svg_prod); },
+    mech: () => { return img(svg_mech); },
+    warehouse: () => { return img(svg_warehouse); },
 };
 
 export default svg_list_icons;
