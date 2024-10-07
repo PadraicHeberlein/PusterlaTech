@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Commons.css";
-import SVGListIcons from "../util/SVG-list-icons.jsx";
+import SVGListIcons from "../util/SVGListIcons.jsx";
 
 const Commons = {
     main: function() {
