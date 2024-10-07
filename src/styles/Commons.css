@@ -4,7 +4,7 @@
 }
 
 .links {
-    list-style: url('../../public/media/rocket-svgrepo-com.svg') inside;
+    list-style: inside;
     background-color: #5e6f7e;
     padding: 10px 20px;
     display: block;
