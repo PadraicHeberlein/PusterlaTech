@@ -7,26 +7,26 @@ const Commons = {
         return (
             <div className="main-view" >
                 <div className="title">
-                    {SVGListIcons.commons}
+                    {SVGListIcons.commons()}
                     <h1 className="title">COMMONS</h1>
                 </div>  
                 <ul className="links">
                     <li className="link">
-                        {SVGListIcons.docs}
+                        {SVGListIcons.docs()}
                         <a 
                             href="/commons/documentation" 
                             className="text"
                         >Documentation</a>
                     </li>
                     <li className="link">
-                        {SVGListIcons.msgs}
+                        {SVGListIcons.msgs()}
                         <a 
                             href="/commons/message-boards" 
                             className="text"
                         >Message Boards</a>
                     </li>
                     <li className="link">
-                        {SVGListIcons.extra}
+                        {SVGListIcons.extra()}
                         <a 
                             href="/commons/external-resources" 
                             className="text"
@@ -40,24 +40,30 @@ const Commons = {
         return (
             <div className="main-view" >
                 <div className="title">
-                    {SVGListIcons.docs}
+                    {SVGListIcons.docs()}
                     <h1 className="title">DOCUMENTATION</h1>
                 </div>  
                 <ul className="links">
                     <li className="link">
-                        {SVGListIcons.prod}
+                        {SVGListIcons.prod()}
                         <a 
                             href="/commons/documentation/production" 
                             className="text"
                         >Production</a>
                     </li>
                     <li className="link">
-                        {SVGListIcons.mech}
-                        <a href="/commons/documentation/maintenance" className="text">Maintenance</a>
+                        {SVGListIcons.mech()}
+                        <a 
+                            href="/commons/documentation/maintenance" 
+                            className="text"
+                        >Maintenance</a>
                     </li>
                     <li className="link">
-                        {SVGListIcons.warehouse}
-                        <a href="/commons/warehouse" className="text">Warehouse</a>
+                        {SVGListIcons.warehouse()}
+                        <a 
+                            href="/commons/warehouse" 
+                            className="text"
+                        >Warehouse</a>
                     </li>
                 </ul>
             </div>
