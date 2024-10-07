@@ -36,38 +36,43 @@ const Commons = {
             </div>
         );
     },
-    docs: function() {
-        return (
-            <div className="main-view" >
-                <div className="title">
-                    {SVGListIcons.docs()}
-                    <h1 className="title">DOCUMENTATION</h1>
-                </div>  
-                <ul className="links">
-                    <li className="link">
-                        {SVGListIcons.prod()}
-                        <a 
-                            href="/commons/documentation/production" 
-                            className="text"
-                        >Production</a>
-                    </li>
-                    <li className="link">
-                        {SVGListIcons.mech()}
-                        <a 
-                            href="/commons/documentation/maintenance" 
-                            className="text"
-                        >Maintenance</a>
-                    </li>
-                    <li className="link">
-                        {SVGListIcons.warehouse()}
-                        <a 
-                            href="/commons/warehouse" 
-                            className="text"
-                        >Warehouse</a>
-                    </li>
-                </ul>
-            </div>
-        );
+    docs: {
+        main: () => {
+            return (
+                <div className="main-view" >
+                    <div className="title">
+                        {SVGListIcons.docs()}
+                        <h1 className="title">DOCUMENTATION</h1>
+                    </div>  
+                    <ul className="links">
+                        <li className="link">
+                            {SVGListIcons.prod()}
+                            <a 
+                                href="/commons/documentation/production" 
+                                className="text"
+                            >Production</a>
+                        </li>
+                        <li className="link">
+                            {SVGListIcons.mech()}
+                            <a 
+                                href="/commons/documentation/maintenance" 
+                                className="text"
+                            >Maintenance</a>
+                        </li>
+                        <li className="link">
+                            {SVGListIcons.warehouse()}
+                            <a 
+                                href="/commons/documentation/warehouse" 
+                                className="text"
+                            >Warehouse</a>
+                        </li>
+                    </ul>
+                </div>
+            );
+        },
+    },
+    msgs: () => {
+
     }
 };
 

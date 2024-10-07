@@ -11,7 +11,7 @@ const App = () => {
         <main className='main-content'>
             <Routes>
                 <Route path="/commons" element={<Commons.main />} />
-                <Route path="/commons/documentation" element={<Commons.docs />} />  
+                <Route path="/commons/documentation" element={<Commons.docs.main />} />  
             </Routes>
         </main>
     </BrowserRouter>
