@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Commons.css";
-import svg_commons from "../svg/commons.svg";
-import svg_docs from "../svg/docs.svg";
-import svg_msgs from "../svg/msgs.svg";
-import svg_extra from "../svg/extra.svg";
+import SVGListIcons from "../util/SVG-list-icons.jsx";
+
 import svg_prod from "../svg/prod.svg";
 import svg_mech from "../svg/mech.svg";
 import svg_whouse from "../svg/whouse.svg";
@@ -13,21 +11,30 @@ const Commons = {
         return (
             <div className="main-view" >
                 <div className="title">
-                    <img src={svg_commons} alt="" />
+                    {SVGListIcons.commons}
                     <h1 className="title">COMMONS</h1>
                 </div>  
                 <ul className="links">
                     <li className="link">
-                        <img src={svg_docs} alt="" />
-                        <a href="/commons/documentation" className="text">Documentation</a>
+                        {SVGListIcons.docs}
+                        <a 
+                            href="/commons/documentation" 
+                            className="text"
+                        >Documentation</a>
                     </li>
                     <li className="link">
-                        <img src={svg_msgs} alt="" />
-                        <a href="/commons/message-boards" className="text">Message Boards</a>
+                        {SVGListIcons.msgs}
+                        <a 
+                            href="/commons/message-boards" 
+                            className="text"
+                        >Message Boards</a>
                     </li>
                     <li className="link">
-                        <img src={svg_extra} alt="" />
-                        <a href="/commons/external-resources" className="text">External Resources</a>
+                        {SVGListIcons.extra}
+                        <a 
+                            href="/commons/external-resources" 
+                            className="text"
+                        >External Resources</a>
                     </li>
                 </ul>
             </div>
@@ -37,7 +44,7 @@ const Commons = {
         return (
             <div className="main-view" >
                 <div className="title">
-                    <img src={svg_docs} alt="" />
+                    {SVGListIcons.docs}
                     <h1 className="title">DOCUMENTATION</h1>
                 </div>  
                 <ul className="links">
